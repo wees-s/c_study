@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/wesle/Documents/C",
-      "program": "c:/Users/wesle/Documents/C/build/Debug/outDebug",
+      "cwd": "c:/Users/wesle/Documents/C/basic_c_studies",
+      "program": "c:/Users/wesle/Documents/C/basic_c_studies/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

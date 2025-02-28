@@ -1,0 +1,9 @@
+As aulas estão separadas por nome dentro da pasta basic_c_studies
+
+1 - NÃO SEI PARA QUE SERVE ESSE EXECUTÁVEL QUE VOCÊ ESCREVEU:
+        •Você pode pesquisar aqui: https://devdocs.io/c/
+2 - MESMO LENDO EU AINDA NÃO ENTENDI, COMO POSSO VER UM EXEMPLO PRÁTICO?
+        •No site da W3schools é possível ver na prática: https://www.w3schools.com/c/index.php
+
+
+IMPORTANTE: Comente nos códigos para não se perder, todos meus códigos terão comentários que será apresentados após o uso de //(COMENTÁRIO DE UMA LINHA) ou /*(COMENTÁRIO COM VÁRIAS LINHAS)*/
