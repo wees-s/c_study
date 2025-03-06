@@ -1,73 +1,28 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */                                        /*   main.c                                             :+:::    :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: wesley42 <wesley42@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/01 15:00:00 by wesley42          #+#    #+#             */
-/*   Updated: 2025/03/01 15:10:00 by wesley42         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-/*#include <stdio.h>
-
-int main()
-{	
-	//contagem de caracteres
-	int n;
-	char str[] = "banana";
-	for (n = 0; str[n] != '\0'; n++);
-	//contagem de caracteres - retornando int n = 6 and word str = BANANA
-	
-	
-	for (int i = 0; i < n; i++) //para cada letra vou rodar outro for para comparar str
-	{
-		int found = 0;
-
-		for (int j = 0; j < n; ++j)
-		{
-			if (i != j && str[i] == str[j])
-			{
-				found = 1;
-				break;
-			}
-		}
-			if (found == 0) return printf("%d", str[i]);
-	}
-	return printf("teste");
-	printf("%s", str);
-	return 0;
-*/
-// C program to find the index of the first
-// non repeating character using nested loop
-
 #include <stdio.h>
 
 // Function to find the index of the first
 // non-repeating character
-char nonRepeatingChar(char s[]) {
-    int n;
-    for (n = 0; n[s] != '\0'; n++);
+char nonRepeatingChar(char s[]) {//iniciando uma função que retornará char
+    int n;//a variável do tipo inteiro n foi declarada para fazer a contagem dos caracteres
+    for (n = 0; n[s] != '\0'; n++);//para n iniciado em 0, enquanto 'n' dentro da string for diferente de NULL, n+1
+				   //assim a contagem em N para com a quantidade de caracteres 
+    for (int i = 0; i < n; ++i) {//passando por dentro n para cada caractere (que foi contado anteriormente)
+        int found = 0;//definindo uma "flag", dizendo que nada foi encontrado found = 0 até que se prove o contrário
 
-    // Iterate over each character in the string
-    for (int i = 0; i < n; ++i) {
-        int found = 0;
-
-        // Check if the character repeats in the
-        // rest of the string
-        for (int j = 0; j < n; ++j) {
-            if (i != j && s[i] == s[j]) {
-                found = 1;
-                break;
+        
+        for (int j = 0; j < n; ++j) {//passando uma segunda variável 'j' por dentro do primeiro laço para conferir se os caracteres são repetidos
+            if (i != j && s[i] == s[j]) {//aqui eu digo > SE número de 'i' for diferente de número de 'j' verifica se o valor atribuído e
+                found = 1;		 //o valor de cactere atribuído a eles forem iguais s[i] s[j] ele ENCONTROU letras iguais (found 1)
+                break;			 // então eu paro o laço
             }
         }
 
-        // If character does not repeat, return it
-        if (found == 0)
+        if (found == 0) //dizendo que SE found se manter em 0, retorne o valor que foi atribuído a ele em s[i]
             return s[i];
     }
 
-    // If no such character is found, return '$'
-    return '$';
+    
+    return '$'; //se forem encontrados somente caracteres iguais, retorne um caractere de erro para ser usado em main
 }
 
 int main() {
