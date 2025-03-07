@@ -11,14 +11,16 @@
 /* ************************************************************************** */
 //#include <stdio.h>
 // PRIMEIRA PARTE É SOMENTE UM GUIA
+//
+// TODA A PARTE COMENTADA FAZ PARTE DO CAMINHO LÓGICO QUE SEGUI - O CÓDIGO LIMPO ESTÁ ABAIXO
 //int main() {
 //	char string[] = "Hello"; /*Hello = 0,1,2,3,4,5
 //	int size = sizeof(string) - 1;
 //	/* sizeof = tamanho da string em bytes -1, ignorando o null
 //	 * agora = hello = 0,1,2,3,4
 //	printf("Original: %s\n", string);
-//	int j, k; /*a variable for init and another for the end
-//	char c; /*a variable for save last character for change
+//	int j, k; /* uma variável para o início e outra para o fim
+//	char c; /*uma variável para salvar a última letra para alteração
 //
 //	for (j = 0, k = size - 1; j < k; j++, k--) {
 /*as condições foram que: j e k são início e fim j=0 k=-1
